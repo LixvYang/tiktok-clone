@@ -1,18 +1,16 @@
 import { defineStore } from "pinia"
 
-export const useProfileStore = defineStore('profile', {
+export const useUserStore = defineStore('user', {
   state: () => ({
     id: '',
     name: '',
     bio: '',
-    image: '',
-    post: null,
-    posts: null,
-    allLikes: 0,
+    image: ''
   }),
   getters: {
   },
   actions: {
     
   },
+  persist: true
 })
